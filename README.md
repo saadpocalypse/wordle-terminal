@@ -25,7 +25,7 @@ To play **wordle-terminal**:
 
 2. Run the following command:
 ```bash
-npm install wordle-terminal
+npm i wordle-terminal
 ```
 
 3. Run the game by running the following command:
@@ -43,7 +43,7 @@ If you want to modify or test this package locally:
 
 1.  Clone the repository.
 2.  Run  `npm link`  in the project directory to make it available globally on your system.
-3.  Use the command  `npx wordle`  to create a test React app with the local changes.
+3.  Use the command  `npx wordle`  to play locally.
 
 <br>
 
