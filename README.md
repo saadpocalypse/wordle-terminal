@@ -101,7 +101,7 @@ If you want to modify or test this package locally:
 
   
 
-This project is licensed under the **ISC License**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **ISC License**. See the [LICENSE](https://github.com/saadpocalypse/wordle-terminal/blob/main/LICENSE) file for details.
 
   
 
