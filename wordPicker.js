@@ -9,8 +9,11 @@ const __dirname = path.dirname(__filename);
 const wordsPath = path.join(__dirname, "words.txt");
 
 export function pickWord(salt = "default-salt") {
-    const today = new Date().toISOString().slice(0, 10);
-    const input = today + salt;
+    const today = new Date();
+    const localDate = `${today.getFullYear()}-${(today.getMonth() + 1)
+        .toString()
+        .padStart(2, "0")}-${today.getDate().toString().padStart(2, "0")}`;
+    const input = localDate + salt;
 
     const hash = crypto.createHash("sha256").update(input).digest("hex");
     const hashNum = parseInt(hash.slice(0, 8), 16);
@@ -23,4 +26,8 @@ export function pickWord(salt = "default-salt") {
         .filter((line) => line.length > 0);
 
     return words[index];
+}
+
+if (process.argv[1] === new URL(import.meta.url).pathname) {
+    console.log(`Today's word is: ${pickWord()}`);
 }

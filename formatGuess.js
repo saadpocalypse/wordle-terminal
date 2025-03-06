@@ -21,7 +21,7 @@ export function formatGuess(guess, word) {
                 result[i] = chalk.yellow(guess[i]);
                 letterCounts[guess[i]]--;
             } else {
-                result[i] = chalk.grey(guess[i]);
+                result[i] = chalk.hex("#808080")(guess[i]);
             }
         }
     }
