@@ -1,6 +1,13 @@
 import inquirer from "inquirer";
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 import InputPrompt from "inquirer/lib/prompts/input.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const validWordsPath = path.join(__dirname, "validWords.txt");
 
 class MaxLengthInputPrompt extends InputPrompt {
     constructor(questions, rl, answers) {
@@ -38,7 +45,7 @@ inquirer.registerPrompt("maxLengthInput", MaxLengthInputPrompt);
 
 export async function promptUserWord() {
     const validWords = fs
-        .readFileSync("validWords.txt", "utf-8")
+        .readFileSync(validWordsPath, "utf-8")
         .split("\n")
         .map((line) => line.trim().toUpperCase())
         .filter((line) => line.length > 0);
