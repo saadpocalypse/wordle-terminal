@@ -53,7 +53,7 @@ To play **wordle-terminal**:
 
 ```bash
 
-npm  i  wordle-terminal
+npm i wordle-terminal
 
 ```
 
@@ -63,7 +63,7 @@ npm  i  wordle-terminal
 
 ```bash
 
-npx  wordle-terminal
+npx wordle-terminal
 
 ```
 
