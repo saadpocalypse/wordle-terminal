@@ -21,7 +21,7 @@ export function formatGuess(guess, word) {
                 result[i] = chalk.yellow(guess[i]);
                 letterCounts[guess[i]]--;
             } else {
-                result[i] = guess[i];
+                result[i] = chalk.grey(guess[i]);
             }
         }
     }
