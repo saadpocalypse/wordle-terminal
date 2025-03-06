@@ -38,7 +38,7 @@ inquirer.registerPrompt("maxLengthInput", MaxLengthInputPrompt);
 
 export async function promptUserWord() {
     const validWords = fs
-        .readFileSync("words.txt", "utf-8")
+        .readFileSync("validWords.txt", "utf-8")
         .split("\n")
         .map((line) => line.trim().toUpperCase())
         .filter((line) => line.length > 0);
@@ -53,10 +53,10 @@ export async function promptUserWord() {
             validate: (input) => {
                 const guess = input.trim().toUpperCase();
                 if (guess.length !== 5) {
-                    return "Your guess must be exactly 5 letters.";
+                    return "Guess must be exactly 5 characters long.";
                 }
                 if (!validWords.includes(guess)) {
-                    return "That word is not in the valid words list.";
+                    return "That is not a valid word.";
                 }
                 return true;
             },

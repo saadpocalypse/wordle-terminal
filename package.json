@@ -13,12 +13,15 @@
     },
     "keywords": [
         "wordle",
-        "terminal",
-        "cli",
-        "game"
+        "cli-game",
+        "nodejs"
     ],
     "author": "Your Name",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/saadpocalypse/wordle-terminal"
+    },
     "dependencies": {
         "chalk": "^5.4.1",
         "inquirer": "^9.3.7"

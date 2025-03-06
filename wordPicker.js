@@ -9,7 +9,7 @@ export function pickWord(salt = "default-salt") {
 
     const hashNum = parseInt(hash.slice(0, 8), 16);
 
-    const index = hashNum % 2309;
+    const index = hashNum % 2315;
 
     const words = fs
         .readFileSync("words.txt", "utf-8")
