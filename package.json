@@ -1,6 +1,6 @@
 {
     "name": "wordle-terminal",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "A Wordle-like game for the terminal.",
     "type": "module",
     "main": "wordle.js",
