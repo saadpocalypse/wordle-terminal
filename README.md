@@ -25,12 +25,12 @@ To play **wordle-terminal**:
 
 2. Run the following command:
 ```bash
-npm install -g wordle-terminal
+npm install wordle-terminal
 ```
 
 3. Run the game by running the following command:
 ```bash
-wordle
+npx wordle-terminal
 ```
 4. Play the game by following the commands on the screen.
 <br>
