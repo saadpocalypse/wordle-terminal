@@ -63,7 +63,7 @@ npm i wordle-terminal
 
 ```bash
 
-npx wordle-terminal
+npx wordle
 
 ```
 
