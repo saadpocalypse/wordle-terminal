@@ -1,0 +1,26 @@
+{
+    "name": "wordle-terminal",
+    "version": "1.0.0",
+    "description": "A Wordle-like game for the terminal.",
+    "type": "module",
+    "main": "wordle.js",
+    "bin": {
+        "wordle": "./wordle.js"
+    },
+    "scripts": {
+        "start": "node wordle.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "wordle",
+        "terminal",
+        "cli",
+        "game"
+    ],
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^5.4.1",
+        "inquirer": "^9.3.7"
+    }
+}
