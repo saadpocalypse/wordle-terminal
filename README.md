@@ -3,7 +3,7 @@
 
   
 
-**wordle-terminal** is a Wordle-like CLI game for your terminal built with Node.js, Chalk, and Inquirer. You get six guesses the word resets everyday.
+**wordle-terminal** is a Wordle-like CLI game for your terminal built with Node.js, Chalk, and Inquirer. You get six guesses and the word resets everyday.
 
   
 
